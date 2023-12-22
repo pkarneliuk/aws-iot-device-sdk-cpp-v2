@@ -2,11 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 # note: cxx-17 requires cmake 3.8, cxx-20 requires cmake 3.12
 project(secure-tunnel CXX)
 
-file(GLOB SRC_FILES
-       "*.cpp"
-       "../../utils/CommandLineUtils.cpp"
-       "../../utils/CommandLineUtils.h"
-)
+file(GLOB SRC_FILES "*.cpp")
 
 add_executable(${PROJECT_NAME} ${SRC_FILES})
 
